@@ -12,10 +12,11 @@ const arrayOfObjects =[
 postRouter.get("/all",(req ,res)=>{
     res.send(arrayOfObjects);
 })
-module.exports= postRouter ;
+
 
 postRouter.get("/id",(req,res)=>{
     const id =req.params.id;
     const array=arrayOfObjects.find(user =>user.id==parseInt(id));
     res.send(array);
 })
+module.exports= postRouter ;

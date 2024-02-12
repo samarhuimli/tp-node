@@ -1,5 +1,5 @@
 const express =require ("express")
-
+//juste besoin de methode de router pas de tous express//
 const authRouter =express.Router();
 
 authRouter.get("/auth",(req ,res)=>{
